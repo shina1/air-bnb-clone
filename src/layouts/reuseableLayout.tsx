@@ -1,9 +1,9 @@
 import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import {  airBnbPinkColor, airBnbDarkGreyColor } from './customColors';
 
 
-const airBnbPinkColor = '#FF385C';
-const airBnbGreyColor = '#717171';
+
 
 const layout = createTheme(
     {
@@ -12,14 +12,15 @@ const layout = createTheme(
                 fontFamily: 'Raleway',
                 textTransform: 'none',
                 fontSize: 15,
+                fontWeight: 600
             },
         },
         palette: {
             primary: {
-                main: airBnbGreyColor,
+                main: airBnbDarkGreyColor,
             },
             secondary: {
-                main: airBnbPinkColor
+                main: airBnbPinkColor,
             },
         },
         components: {
@@ -77,8 +78,8 @@ const layout = createTheme(
     }
 );
 
-const ComponentLayout = () => {
-    return <ThemeProvider theme={layout}></ThemeProvider>
+const ComponentLayout = (props: any) => {
+    return <ThemeProvider theme={layout}>{props.children}</ThemeProvider>
 }
 
 export default ComponentLayout
