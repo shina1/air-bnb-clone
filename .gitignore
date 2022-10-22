@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+/junk.js
 # production
 /build
 
