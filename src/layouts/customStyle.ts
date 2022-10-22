@@ -11,7 +11,7 @@ export const  carouselD = {
 
 export const carouselImg = {
     display: 'block',
-    width: '100%',
+    width: '95%',
     height: 275,
     borderRadius: 3
 };
