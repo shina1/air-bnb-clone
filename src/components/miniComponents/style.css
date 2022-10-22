@@ -1,0 +1,12 @@
+.carousel .MuiMobileStepper-root{
+    opacity: 0;
+    transition: all ease 1500ms;
+}
+
+.carousel:hover .MuiMobileStepper-root{
+    opacity: 1;
+}
+
+.carousel:hover .MuiMobileStepper-dotActive{
+    background-color: #fff;
+}
