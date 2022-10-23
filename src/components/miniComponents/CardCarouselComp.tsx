@@ -26,10 +26,10 @@ const CardCarouselComp = (props: propType) => {
     const [step, setStep] = useState(0);
     const stepLength = data.imgs.length;
     const nextStep = () => {
-        setStep((prevStep) => prevStep + 1);
+        setStep((prevStep: number) => prevStep + 1);
     }
     const previousStep = () => {
-        setStep((prevStep) => prevStep - 1);
+        setStep((prevStep: number) => prevStep - 1);
     }
     const handleStepSchange = (next: number) => {
         setStep(next)
@@ -55,7 +55,7 @@ const CardCarouselComp = (props: propType) => {
             <SwipeableViews axis={'x'} index={step} onChangeIndex={handleStepSchange} enableMouseEvents
             >
                 {
-                    data.imgs.map((el, i) => {
+                    data.imgs.map((el) => {
                         return (
                             <div key={el.id}> 
                                 <Img alt={`${el.id}`} src={el.link} sx={{
@@ -135,11 +135,11 @@ const CardCarouselComp = (props: propType) => {
                 ${data.price} {data.priceDetail}
             </Typography>
         </Box>
-        <Box sx={{mt: 2}}>
+        <Box sx={{mt: 2, ml: 12}}>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
-                alignItems: 'center'
+                alignItems: 'center',
             }}>
                 {
                     data.newAds ? (

@@ -13,8 +13,8 @@ const CardComponent = () => {
   return (
     <>
        {
-        cardData?.map(data => {
-            return <Grid key={data.id} sm={2} md={4} lg={3} item xs={12}>
+        cardData?.map((data: enumGalleryData) => {
+            return <Grid key={data.id} sm={6} md={4} lg={3} item xs={12}>
                 <CardCarouselComp data={data} liked={liked}/>
             </Grid>
         })
