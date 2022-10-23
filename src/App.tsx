@@ -6,6 +6,7 @@ import HeaderComponent from './components/HeaderComponent';
 import OptionFilter from './components/OptionFilter';
 import CardGrid from './components/CardGrid';
 import FooterComponent from './components/FooterComponent';
+import MobileFooter from './components/MobileFooter';
 
 
 
@@ -33,7 +34,10 @@ function App() {
               <CardGrid />
             </Container>
         </Box>
-        <Box>
+        <Box sx={{display: {xs: 'flex' , md: 'none'}}}>
+          <MobileFooter />
+        </Box>
+        <Box sx={{display: {xs:'none', md: 'block'}}}>
           <FooterComponent />
         </Box>
     </Box>
