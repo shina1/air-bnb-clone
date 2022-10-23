@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/junk.js
 # testing
 /coverage
 /junk.js
