@@ -9,6 +9,7 @@ const CardGrid = () => {
       <Grid sx={{ flexGrow: 1,  }} container rowSpacing={3} columnSpacing={3}>
         <CardComponent />
       </Grid>
+      
     </Box>
   )
 }
