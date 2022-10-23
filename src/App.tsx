@@ -7,6 +7,7 @@ import OptionFilter from './components/OptionFilter';
 import CardGrid from './components/CardGrid';
 import FooterComponent from './components/FooterComponent';
 import MobileFooter from './components/MobileFooter';
+import ViewMap from './components/ViewMap';
 
 
 
@@ -40,6 +41,7 @@ function App() {
         <Box sx={{display: {xs:'none', md: 'block'}}}>
           <FooterComponent />
         </Box>
+        <ViewMap />
     </Box>
     </>
   );

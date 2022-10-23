@@ -9,7 +9,7 @@ const layout = createTheme(
     {
         typography: {
             allVariants: {
-                fontFamily: 'Raleway',
+                fontFamily: 'Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif',
                 textTransform: 'none',
                 fontSize: 15,
                 fontWeight: 600

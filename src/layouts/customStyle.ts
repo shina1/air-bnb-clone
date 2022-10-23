@@ -39,3 +39,11 @@ export const fixedBtn = {
     bottom: 100,
     width: '100%'
 }
+
+// react-icon styles
+
+export const mapIconStyle = {
+     color: "#000", 
+    fontSize: "1.5em",
+    backgroundColor: "#fff" 
+}
