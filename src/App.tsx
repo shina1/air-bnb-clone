@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import HeaderComponent from './components/HeaderComponent';
 import OptionFilter from './components/OptionFilter';
 import CardGrid from './components/CardGrid';
+import FooterComponent from './components/FooterComponent';
 
 
 
@@ -31,6 +32,9 @@ function App() {
             <Container maxWidth="xl" sx={{mb: 3, mt:8}}>
               <CardGrid />
             </Container>
+        </Box>
+        <Box>
+          <FooterComponent />
         </Box>
     </Box>
     </>
