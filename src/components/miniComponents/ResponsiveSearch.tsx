@@ -9,8 +9,10 @@ const ResponsiveSearch = () => {
   return (
     <Paper component="form"
     sx={{
-        p: '2px 4px',
+        p: '2px 24x',
         dislay: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center',
         width: 350,
         border: '1px solid #ccc', 
@@ -18,8 +20,8 @@ const ResponsiveSearch = () => {
     }}
     >
       <IconButton sx={{p: '10px'}}><FaSearch /></IconButton>
-      <InputBase sx={{ml: 1, flex: 1}} placeholder="where to?"/>
-      <IconButton sx={{ml: 7, p: '10px'}} type="submit"><VscSettings /></IconButton>
+      <InputBase sx={{ml: 1}} placeholder="where to?"/>
+      <IconButton sx={{ml: 5, p: '10px'}} type="submit"><VscSettings /></IconButton>
     </Paper>
   )
 }

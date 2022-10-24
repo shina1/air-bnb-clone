@@ -28,7 +28,7 @@ const HeaderComponent = () => {
             <Box sx={deskDisplay}><LocationSearchComponent /></Box>
             <Box sx={deskDisplay}><BecomeAHostComp /></Box>
             {/* this will only display on mobile screen */}
-            <Box sx={{display: {xs: 'flex', md: 'none'}}}>
+            <Box sx={{display: {xs: 'flex', md: 'none'}, justifyContent: 'space-between'}}>
                 <ResponsiveSearch />
             </Box>
         </Box>

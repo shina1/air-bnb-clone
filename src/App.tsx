@@ -26,6 +26,8 @@ function App() {
     }}>
         <Box>
           <HeaderComponent />
+        </Box>
+        <Box>
           <OptionFilter setCardData={setCardData} cardData={cardData} filtredData={filtredData} setFilteredData={setFilteredData}/>
         </Box>
         <Box sx={{
