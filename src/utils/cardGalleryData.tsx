@@ -16,7 +16,7 @@ export interface enumGalleryData {
     price: number,
     priceDetail: string,
     rating: number,
-    category: string[],
+    category: string,
     newAds: boolean
 }
 
@@ -35,7 +35,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['design','omg'],
+        category: 'design',
         newAds: false
     },
     {
@@ -51,7 +51,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['golfing'],
+        category: 'design',
         newAds: false
     },
     {
@@ -67,7 +67,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['domes'],
+        category: 'design',
         newAds: true
     }, {
         id: 4,
@@ -82,7 +82,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['a-frames'],
+        category: 'a-frames',
         newAds: false,
     }, {
         id: 5,
@@ -97,7 +97,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['amazing pools'],
+        category: 'amazing pools',
         newAds: false
     }, {
         id: 6,
@@ -112,7 +112,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['design'],
+        category: 'design',
         newAds: false
     },{
         id: 7,
@@ -127,7 +127,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['tropical'],
+        category: 'tropical',
         newAds: false
     },{
         id: 8,
@@ -142,7 +142,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['golfing'],
+        category: 'golfing',
         newAds: false
     },{
         id: 9,
@@ -157,7 +157,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['countryside'],
+        category: 'countryside',
         newAds: false
     },{
         id: 10,
@@ -172,7 +172,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['earth homes'],
+        category: 'earth homes',
         newAds: false
     },{
         id: 11,
@@ -187,7 +187,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['surfing'],
+        category: 'surfing',
         newAds: false
     },{
         id: 12,
@@ -202,7 +202,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['tiny homes'],
+        category: 'tiny homes',
         newAds: false
     },{
         id: 13,
@@ -217,7 +217,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['design'],
+        category: 'design',
         newAds: false
     },{
         id: 14,
@@ -232,7 +232,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['omg!'],
+        category: 'omg!',
         newAds: false
     },{
         id: 15,
@@ -247,7 +247,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['domes'],
+        category: 'domes',
         newAds: false
     },{
         id: 16,
@@ -262,7 +262,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 250,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['treehouses'],
+        category: 'treehouses',
         newAds: false
     },{
         id: 17,
@@ -277,7 +277,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['national parks'],
+        category: 'national parks',
         newAds: false
     },{
         id: 18,
@@ -292,7 +292,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['design'],
+        category: 'shared homes',
         newAds: false
     },{
         id: 19,
@@ -307,7 +307,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['treehouses'],
+        category: 'treehouses',
         newAds: false
     },{
         id: 20,
@@ -322,7 +322,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['surfing'],
+        category: 'surfing',
         newAds: false
     },{
         id: 21,
@@ -337,7 +337,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.7,
-        category: ['domes'],
+        category: 'domes',
         newAds: false
     },{
         id: 22,
@@ -352,7 +352,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.7,
-        category: ['design'],
+        category:  'shared homes',
         newAds: false
     },{
         id: 23,
@@ -367,7 +367,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.7,
-        category: ['lakefront'],
+        category: 'lakefront',
         newAds: false
     },{
         id: 24,
@@ -382,7 +382,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.7,
-        category: ['tiny homes'],
+        category: 'tiny homes',
         newAds: false
     },{
         id: 25,
@@ -397,7 +397,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.7,
-        category: ['omg!', 'domes' ],
+        category: 'domes',
         newAds: false
     },{
         id: 26,
@@ -412,7 +412,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 1550,
         priceDetail: 'night',
         rating: 4.7,
-        category: ['national parks'],
+        category: 'national parks',
         newAds: false
     },{
         id: 27,
@@ -427,7 +427,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['cabines', 'lake front'],
+        category: 'cabines', 
         newAds: false
     },{
         id: 28,
@@ -442,7 +442,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['treehouses'],
+        category: 'treehouses',
         newAds: false
     },{
         id: 29,
@@ -457,7 +457,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 4.2,
-        category: ['amazing pools'],
+        category: 'amazing pools',
         newAds: false
     },{
         id: 30,
@@ -472,7 +472,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['earth homes', 'caves'],
+        category:  'caves',
         newAds: true
     },{
         id: 31,
@@ -487,7 +487,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['country side', 'carbin'],
+        category:  'carbin',
         newAds: true
     },{
         id: 32,
@@ -502,7 +502,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['surfing', 'golfing'],
+        category:'golfing',
         newAds: true
     },{
         id: 33,
@@ -517,7 +517,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['tiny homes', 'shared homes'],
+        category: 'tiny homes', 
         newAds: true
     },{
         id: 34,
@@ -532,7 +532,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['design', 'bed & brakefast'],
+        category: 'bed & brakefast',
         newAds: true
     },
     {
@@ -548,7 +548,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 74,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['arctic', 'a-frames'],
+        category: 'arctic', 
         newAds: true
     },
     {
@@ -564,7 +564,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 50,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['design', 'domes'],
+        category: 'domes',
         newAds: true
     },{
         id: 37,
@@ -579,7 +579,7 @@ export const cardgalleryDatas: enumGalleryData[] =[
         price: 150,
         priceDetail: 'night',
         rating: 3.8,
-        category: ['lakefront','camping'],
+        category: 'camping',
         newAds: false
     },
 ];

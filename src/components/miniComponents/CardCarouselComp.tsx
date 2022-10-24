@@ -18,11 +18,11 @@ import './style.css'
 
 type propType = {
     data: enumGalleryData,
-    liked: boolean
 }
 
 const CardCarouselComp = (props: propType) => {
-    const {data, liked} = props
+    const {data,} = props
+    const [liked, setLiked]= useState(false)
     const [step, setStep] = useState(0);
     const stepLength = data.imgs.length;
     const nextStep = () => {
@@ -33,6 +33,9 @@ const CardCarouselComp = (props: propType) => {
     }
     const handleStepSchange = (next: number) => {
         setStep(next)
+    }
+    const handleLike = () => {
+        setLiked(!liked)
     }
     // justifyContent="center" spacing={spacing}
   return (
@@ -47,7 +50,7 @@ const CardCarouselComp = (props: propType) => {
         zIndex: 10
         }}>
          {
-            liked ? <AiFillHeart size={24} color="#fff"/>:<FaRegHeart size={24} color="#fff"/>
+            liked ? <AiFillHeart size={24} color="#fff" onClick={handleLike}/>:<FaRegHeart size={24} color="#fff" onClick={handleLike}/>
          }
       </Box>
       {

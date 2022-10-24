@@ -1,4 +1,4 @@
-import React , {useState}from 'react'
+import React , {useState, useEffect}from 'react'
 import Box from '@mui/material/Box';
 import Tabs, {tabsClasses} from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -9,14 +9,28 @@ import {FaFilter} from 'react-icons/fa';
 import {BsSliders} from 'react-icons/bs';
 import {CiSliderHorizontal} from 'react-icons/ci';
 import { finterDatas } from '../utils/filter-data';
+import { cardgalleryDatas, enumGalleryData } from '../utils/cardGalleryData';
 
-
-const OptionFilter = () => {
+type filterCompType = {
+    cardData: enumGalleryData[]
+    setCardData: React.Dispatch<React.SetStateAction<enumGalleryData[]>>
+    filtredData: string
+    setFilteredData: React.Dispatch<React.SetStateAction<string>>
+  }
+const OptionFilter = ({cardData, setCardData, setFilteredData, filtredData}: filterCompType) => {
     const [tab, setTab] = useState(0)
     const handleSetTab = (e: { preventDefault: () => void; }, nextTab: React.SetStateAction<number>) => {
         e.preventDefault()
         setTab(nextTab)
     }
+
+    const handleSetData = (name: string) => {
+            setFilteredData(name)
+    }
+   
+
+   
+
   return (
     <Container maxWidth="xl">
         
@@ -28,7 +42,7 @@ const OptionFilter = () => {
             }}>
                 {
                     finterDatas?.map(data => {
-                        return <Tab key={data.id} icon={data.icon} label={data.name} />
+                        return <Tab key={data.id} icon={data.icon} label={data.name} onClick={() => handleSetData(data.name)}/>
                     })
                 }
             </Tabs>
