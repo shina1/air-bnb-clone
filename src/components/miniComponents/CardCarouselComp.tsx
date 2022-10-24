@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import MobileStepper from '@mui/material/MobileStepper';
-
+import Skeleton from '@mui/material/Skeleton';
 import  KeyboardArrowLeft  from '@mui/icons-material/KeyboardArrowLeft';
 import  KeyboardArrowRight  from '@mui/icons-material/KeyboardArrowRight';
 
@@ -24,6 +24,7 @@ const CardCarouselComp = (props: propType) => {
     const {data,} = props
     const [liked, setLiked]= useState(false)
     const [step, setStep] = useState(0);
+    const [loading,setLoading] = useState(false)
     const stepLength = data.imgs.length;
     const nextStep = () => {
         setStep((prevStep: number) => prevStep + 1);
@@ -54,7 +55,7 @@ const CardCarouselComp = (props: propType) => {
          }
       </Box>
       {
-        data.imgs.length && (
+        data.imgs.length ? (
             <SwipeableViews axis={'x'} index={step} onChangeIndex={handleStepSchange} enableMouseEvents
             >
                 {
@@ -68,11 +69,11 @@ const CardCarouselComp = (props: propType) => {
                                     borderRadius: 3}}/>
                             </div>
                         )
-                    })
+                    }) 
                 }
                 
             </SwipeableViews>
-        )
+        ) : <Skeleton variant="rectangular" width={310} height={118} />
       }
       <Box sx={{
         position: 'absolute',
