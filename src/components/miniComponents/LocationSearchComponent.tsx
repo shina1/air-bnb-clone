@@ -33,6 +33,8 @@ const LocationSearchComponent = () => {
                 return(
                    <React.Fragment key={cont.id}>
                         <Button sx={{
+                          display: 'flex',
+                          justifyContent: 'center'
                         }}>
                             <Typography sx={{
                                 color: `${cont.withIcon ? '#717171' : airBnbDarkGreyColor}`,
@@ -40,10 +42,10 @@ const LocationSearchComponent = () => {
                                 fontSize: '14px',
                             }}>{cont.cont}</Typography>
                             <Box sx={{
-                                mr: 1, ml: 1, mt: 1, 
+                                mr: 1, ml: 1, mt: 1,mb:1 
                             }}>
                                 {
-                                    cont.withIcon && <IoSearchCircleSharp size={32} color={airBnbPinkColor} />
+                                    cont.withIcon && <IoSearchCircleSharp size={40} color={airBnbPinkColor} />
                                 }
                             </Box>
                         </Button>
