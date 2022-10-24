@@ -2,23 +2,24 @@ import React,{useState, useEffect} from 'react';
 import Grid from '@mui/material/Grid';
 import { cardgalleryDatas, enumGalleryData } from '../../utils/cardGalleryData';
 import CardCarouselComp from './CardCarouselComp';
-
-const CardComponent = () => {
-    const [cardData, setCarddata] = useState<enumGalleryData[]>();
-    const [liked, setLiked]= useState(false)
-
-    useEffect(()=>{
-        setCarddata(cardgalleryDatas);
-    },[cardData])
+type gridType = {
+  cardData: enumGalleryData[],
+  filtredData: string
+}
+const CardComponent = ({cardData, filtredData}: gridType) => {
+    
   return (
     <>
-       {
+    {
         cardData?.map((data: enumGalleryData) => {
-            return <Grid key={data.id} sm={6} md={4} lg={3} item xs={12}>
-                <CardCarouselComp data={data} liked={liked}/>
-            </Grid>
-        })
-       } 
+          
+           return  data.category.toLowerCase() === filtredData.toLowerCase() && <Grid key={data.id} sm={6} md={4} lg={3} item xs={12}>
+            <CardCarouselComp data={data} />
+            </Grid> 
+          
+      })
+    }
+     
     </>
   )
 }

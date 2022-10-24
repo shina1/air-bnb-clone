@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -8,10 +8,14 @@ import CardGrid from './components/CardGrid';
 import FooterComponent from './components/FooterComponent';
 import MobileFooter from './components/MobileFooter';
 import ViewMap from './components/ViewMap';
+import { cardgalleryDatas, enumGalleryData } from './utils/cardGalleryData';
 
 
 
 function App() {
+  const [cardData, setCardData] = useState<enumGalleryData[]>(cardgalleryDatas);
+  const [filtredData, setFilteredData] = useState('design')
+  
   return (
     <>
       <CssBaseline />
@@ -22,7 +26,7 @@ function App() {
     }}>
         <Box>
           <HeaderComponent />
-          <OptionFilter />
+          <OptionFilter setCardData={setCardData} cardData={cardData} filtredData={filtredData} setFilteredData={setFilteredData}/>
         </Box>
         <Box sx={{
           display: "flex",
@@ -32,7 +36,7 @@ function App() {
           overflowY: "scroll"
         }}>
             <Container maxWidth="xl" sx={{mb: 3, mt:8}}>
-              <CardGrid />
+              <CardGrid cardData={cardData} filtredData={filtredData}/>
             </Container>
         </Box>
         <Box sx={{display: {xs: 'flex' , md: 'none'}}}>
