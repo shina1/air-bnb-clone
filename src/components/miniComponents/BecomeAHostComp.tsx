@@ -28,6 +28,7 @@ const BecomeAHostComp = () => {
         <Stack>
             <AiOutlineMenu size={24} />
             <FaRegUserCircle size={24} />
+            <Box sx={{width:'10px', height: '10px', backgroundColor: '#FF385C', borderRadius: '10px', position:'absolute', left: 59, top: 9}}></Box>
         </Stack>
         </Button>
       </Stack>
